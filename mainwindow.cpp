@@ -102,7 +102,8 @@ void MainWindow::on_pushButton_add_road_clicked()
   // add_road_dialog->show();
     add_road_dialog.show();
     client *c=new client();
-    c->request_msg();
+    QByteArray b;
+    c->request_msg(b);
 }
 
 void MainWindow::add_road(QString name)

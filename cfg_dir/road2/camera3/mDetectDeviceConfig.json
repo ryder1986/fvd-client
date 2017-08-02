@@ -1,0 +1,51 @@
+{
+    "mDetectDeviceConfig": {
+        "cam_info": [
+            {
+                "camdirect": 7,
+                "cammerIp": "192.168.1.81",
+                "camstatus": 1
+            },
+            {
+                "camdirect": 1,
+                "cammerIp": "192.168.1.81",
+                "camstatus": 1
+            },
+            {
+                "camdirect": 5,
+                "cammerIp": "192.168.1.193",
+                "camstatus": 1
+            },
+            {
+                "camdirect": 7,
+                "cammerIp": "192.168.1.193",
+                "camstatus": 1
+            },
+            {
+                "camdirect": 0,
+                "cammerIp": "",
+                "camstatus": 0
+            },
+            {
+                "camdirect": 0,
+                "cammerIp": "",
+                "camstatus": 0
+            },
+            {
+                "camdirect": 0,
+                "cammerIp": "",
+                "camstatus": 0
+            },
+            {
+                "camdirect": 0,
+                "cammerIp": "",
+                "camstatus": 0
+            }
+        ],
+        "camnum": 4,
+        "detectip": "192.168.1.213",
+        "detectname": "侨香路",
+        "detectport": 8888,
+        "deviceID": 1
+    }
+}

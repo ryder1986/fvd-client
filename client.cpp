@@ -8,7 +8,7 @@ client::client(QObject *parent) : QObject(parent)
   //  f->open(tcpSocket,QFile::ReadOnly);
 
     in.setDevice(tcpSocket);
-    in.setVersion(QDataStream::Qt_1_0);
+    in.setVersion(QDataStream::Qt_4_0);
 //! [2] //! [4]
  //   connect(tcpSocket, QOverload<QAbstractSocket::SocketError>::of(&QAbstractSocket::error),  this, &client::displayError);
 }
