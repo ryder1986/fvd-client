@@ -1,0 +1,803 @@
+{
+   "dev_info" : {
+      "camnum" : 2,
+      "detectip" : "192.168.1.213",
+      "detectname" : "qiaoxianglu",
+      "detectport" : 8888,
+      "deviceID" : 1
+   },
+   "mCamParam" : [
+      {
+         "camattr" : {
+			"camera_enabled" : 1,
+            "adjustIp" : "192.168.1.60",
+            "adjustport" : 5000,
+            "camID" : 0,
+            "cammerIp" : "192.168.1.81",
+            "cammerport" : 5000,
+            "direction" : 7,
+            "passwd" : "admin",
+            "signalIp" : "192.168.1.211",
+            "signalport" : 5000,
+            "urlname" : "admin",
+            "username" : "admin"
+         },
+         "camdem" : {
+            "baselinelen" : 5,
+            "cam2stop" : 10,
+            "camheight" : 6,
+            "farth2stop" : 60,
+            "lannum" : 3,
+            "number" : 41,
+            "recent2stop" : 20
+         },
+         "channelcoil" : [
+            {
+               "farthCoillen" : 6,
+               "number" : 41,
+               "recentCoillen" : 4
+            },
+            {
+               "farthCoillen" : 6,
+               "number" : 42,
+               "recentCoillen" : 4
+            },
+            {
+               "farthCoillen" : 6,
+               "number" : 43,
+               "recentCoillen" : 4
+            },
+            {
+               "farthCoillen" : 2,
+               "number" : 1,
+               "recentCoillen" : 3
+            }
+         ],
+         "coilnum" : 3
+      },
+      {
+         "camattr" : {
+			"camera_enabled" : 1,
+            "adjustIp" : "192.168.1.60",
+            "adjustport" : 5000,
+            "camID" : 0,
+            "cammerIp" : "192.168.1.81",
+            "cammerport" : 5000,
+            "direction" : 7,
+            "passwd" : "admin",
+            "signalIp" : "192.168.1.211",
+            "signalport" : 5000,
+            "urlname" : "admin",
+            "username" : "admin"
+         },
+         "camdem" : {
+            "baselinelen" : 5,
+            "cam2stop" : 10,
+            "camheight" : 6,
+            "farth2stop" : 60,
+            "lannum" : 3,
+            "number" : 41,
+            "recent2stop" : 20
+         },
+         "channelcoil" : [
+            {
+               "farthCoillen" : 6,
+               "number" : 41,
+               "recentCoillen" : 4
+            },
+            {
+               "farthCoillen" : 6,
+               "number" : 42,
+               "recentCoillen" : 4
+            },
+            {
+               "farthCoillen" : 6,
+               "number" : 43,
+               "recentCoillen" : 4
+            },
+            {
+               "farthCoillen" : 2,
+               "number" : 1,
+               "recentCoillen" : 3
+            }
+         ],
+         "coilnum" : 3
+      }
+   ],
+   "mCamDetectParam" : [
+      {
+         "area" : {
+            "realcoordinate" : [
+               {
+                  "x" : 0,
+                  "y" : 0
+               },
+               {
+                  "x" : 0,
+                  "y" : 0
+               },
+               {
+                  "x" : 0,
+                  "y" : 0
+               },
+               {
+                  "x" : 0,
+                  "y" : 0
+               },
+               {
+                  "x" : 0,
+                  "y" : 0
+               },
+               {
+                  "x" : 0,
+                  "y" : 0
+               },
+               {
+                  "x" : 0,
+                  "y" : 0
+               },
+               {
+                  "x" : 0,
+                  "y" : 0
+               }
+            ],
+            "vircoordinate" : [
+               {
+                  "x" : 263,
+                  "y" : 43
+               },
+               {
+                  "x" : 547,
+                  "y" : 43
+               },
+               {
+                  "x" : 165,
+                  "y" : 300
+               },
+               {
+                  "x" : 622,
+                  "y" : 303
+               },
+               {
+                  "x" : 344,
+                  "y" : 100
+               },
+               {
+                  "x" : 345,
+                  "y" : 52
+               },
+               {
+                  "x" : 0,
+                  "y" : 0
+               },
+               {
+                  "x" : 0,
+                  "y" : 0
+               }
+            ]
+         },
+         "detectlane" : {
+            "lanenum" : 3,
+            "virtuallane" : [
+               {
+                  "Front" : [
+                     {
+                        "x" : 177,
+                        "y" : 130
+                     },
+                     {
+                        "x" : 206,
+                        "y" : 60
+                     },
+                     {
+                        "x" : 295,
+                        "y" : 60
+                     },
+                     {
+                        "x" : 282,
+                        "y" : 130
+                     }
+                  ],
+                  "Rear" : [
+                     {
+                        "x" : 60,
+                        "y" : 399
+                     },
+                     {
+                        "x" : 101,
+                        "y" : 301
+                     },
+                     {
+                        "x" : 253,
+                        "y" : 301
+                     },
+                     {
+                        "x" : 234,
+                        "y" : 399
+                     }
+                  ]
+               },
+               {
+                  "Front" : [
+                     {
+                        "x" : 299,
+                        "y" : 130
+                     },
+                     {
+                        "x" : 314,
+                        "y" : 60
+                     },
+                     {
+                        "x" : 428,
+                        "y" : 60
+                     },
+                     {
+                        "x" : 428,
+                        "y" : 130
+                     }
+                  ],
+                  "Rear" : [
+                     {
+                        "x" : 240,
+                        "y" : 399
+                     },
+                     {
+                        "x" : 260,
+                        "y" : 302
+                     },
+                     {
+                        "x" : 430,
+                        "y" : 302
+                     },
+                     {
+                        "x" : 429,
+                        "y" : 399
+                     }
+                  ]
+               },
+               {
+                  "Front" : [
+                     {
+                        "x" : 439,
+                        "y" : 130
+                     },
+                     {
+                        "x" : 439,
+                        "y" : 60
+                     },
+                     {
+                        "x" : 525,
+                        "y" : 60
+                     },
+                     {
+                        "x" : 538,
+                        "y" : 130
+                     }
+                  ],
+                  "Rear" : [
+                     {
+                        "x" : 435,
+                        "y" : 399
+                     },
+                     {
+                        "x" : 435,
+                        "y" : 302
+                     },
+                     {
+                        "x" : 574,
+                        "y" : 302
+                     },
+                     {
+                        "x" : 592,
+                        "y" : 399
+                     }
+                  ]
+               },
+               {
+                  "Front" : [
+                     {
+                        "x" : 0,
+                        "y" : 0
+                     },
+                     {
+                        "x" : 0,
+                        "y" : 0
+                     },
+                     {
+                        "x" : 0,
+                        "y" : 0
+                     },
+                     {
+                        "x" : 0,
+                        "y" : 0
+                     }
+                  ],
+                  "Rear" : [
+                     {
+                        "x" : 0,
+                        "y" : 0
+                     },
+                     {
+                        "x" : 0,
+                        "y" : 0
+                     },
+                     {
+                        "x" : 0,
+                        "y" : 0
+                     },
+                     {
+                        "x" : 0,
+                        "y" : 0
+                     }
+                  ]
+               }
+            ]
+         },
+         "detectparam" : [
+            {
+               "shutterMax" : 2,
+               "shutterMin" : 3,
+               "uComprehensiveSens" : 20,
+               "uDayNightJudgeMinContiuFrame" : 200,
+               "uDetectSens1" : 20,
+               "uDetectSens2" : 20,
+               "uGraySubThreshold" : 200,
+               "uSobelThreshold" : 3,
+               "uSpeedCounterChangedThreshold" : 20,
+               "uSpeedCounterChangedThreshold1" : 20,
+               "uSpeedCounterChangedThreshold2" : 20,
+               "uStatisticsSens1" : 15,
+               "uStatisticsSens2" : 3,
+               "uTransFactor" : 2
+            },
+            {
+               "shutterMax" : 13,
+               "shutterMin" : 13,
+               "uComprehensiveSens" : 30,
+               "uDayNightJudgeMinContiuFrame" : 200,
+               "uDetectSens1" : 20,
+               "uDetectSens2" : 20,
+               "uGraySubThreshold" : 0,
+               "uSobelThreshold" : 3,
+               "uSpeedCounterChangedThreshold" : 10,
+               "uSpeedCounterChangedThreshold1" : 800,
+               "uSpeedCounterChangedThreshold2" : 150,
+               "uStatisticsSens1" : 15,
+               "uStatisticsSens2" : 3,
+               "uTransFactor" : 2
+            }
+         ],
+         "laneline" : {
+            "laneline" : [
+               {
+                  "endx" : 27,
+                  "endy" : 479,
+                  "startx" : 227,
+                  "starty" : 0
+               },
+               {
+                  "endx" : 218,
+                  "endy" : 479,
+                  "startx" : 311,
+                  "starty" : 0
+               },
+               {
+                  "endx" : 224,
+                  "endy" : 479,
+                  "startx" : 322,
+                  "starty" : 0
+               },
+               {
+                  "endx" : 428,
+                  "endy" : 479,
+                  "startx" : 433,
+                  "starty" : 0
+               },
+               {
+                  "endx" : 435,
+                  "endy" : 479,
+                  "startx" : 435,
+                  "starty" : 0
+               },
+               {
+                  "endx" : 607,
+                  "endy" : 479,
+                  "startx" : 518,
+                  "starty" : 0
+               },
+               {
+                  "endx" : 0,
+                  "endy" : 0,
+                  "startx" : 0,
+                  "starty" : 0
+               },
+               {
+                  "endx" : 0,
+                  "endy" : 0,
+                  "startx" : 0,
+                  "starty" : 0
+               }
+            ],
+            "lanelinenum" : 6
+         },
+         "standpoint" : [
+            {
+               "coordinate" : {
+                  "x" : 0,
+                  "y" : 256
+               },
+               "value" : 30
+            },
+            {
+               "coordinate" : {
+                  "x" : 0,
+                  "y" : 113
+               },
+               "value" : 40
+            },
+            {
+               "coordinate" : {
+                  "x" : 0,
+                  "y" : 23
+               },
+               "value" : 50
+            },
+            {
+               "coordinate" : {
+                  "x" : 0,
+                  "y" : 0
+               },
+               "value" : 0
+            }
+         ],
+         "timep" : [ 330, 420, 1020, 1200 ]
+      },
+      {
+         "area" : {
+            "realcoordinate" : [
+               {
+                  "x" : 0,
+                  "y" : 0
+               },
+               {
+                  "x" : 0,
+                  "y" : 0
+               },
+               {
+                  "x" : 0,
+                  "y" : 0
+               },
+               {
+                  "x" : 0,
+                  "y" : 0
+               },
+               {
+                  "x" : 0,
+                  "y" : 0
+               },
+               {
+                  "x" : 0,
+                  "y" : 0
+               },
+               {
+                  "x" : 0,
+                  "y" : 0
+               },
+               {
+                  "x" : 0,
+                  "y" : 0
+               }
+            ],
+            "vircoordinate" : [
+               {
+                  "x" : 263,
+                  "y" : 43
+               },
+               {
+                  "x" : 547,
+                  "y" : 43
+               },
+               {
+                  "x" : 165,
+                  "y" : 300
+               },
+               {
+                  "x" : 622,
+                  "y" : 303
+               },
+               {
+                  "x" : 344,
+                  "y" : 100
+               },
+               {
+                  "x" : 345,
+                  "y" : 52
+               },
+               {
+                  "x" : 0,
+                  "y" : 0
+               },
+               {
+                  "x" : 0,
+                  "y" : 0
+               }
+            ]
+         },
+         "detectlane" : {
+            "lanenum" : 3,
+            "virtuallane" : [
+               {
+                  "Front" : [
+                     {
+                        "x" : 177,
+                        "y" : 130
+                     },
+                     {
+                        "x" : 206,
+                        "y" : 60
+                     },
+                     {
+                        "x" : 295,
+                        "y" : 60
+                     },
+                     {
+                        "x" : 282,
+                        "y" : 130
+                     }
+                  ],
+                  "Rear" : [
+                     {
+                        "x" : 60,
+                        "y" : 399
+                     },
+                     {
+                        "x" : 101,
+                        "y" : 301
+                     },
+                     {
+                        "x" : 253,
+                        "y" : 301
+                     },
+                     {
+                        "x" : 234,
+                        "y" : 399
+                     }
+                  ]
+               },
+               {
+                  "Front" : [
+                     {
+                        "x" : 299,
+                        "y" : 130
+                     },
+                     {
+                        "x" : 314,
+                        "y" : 60
+                     },
+                     {
+                        "x" : 428,
+                        "y" : 60
+                     },
+                     {
+                        "x" : 428,
+                        "y" : 130
+                     }
+                  ],
+                  "Rear" : [
+                     {
+                        "x" : 240,
+                        "y" : 399
+                     },
+                     {
+                        "x" : 260,
+                        "y" : 302
+                     },
+                     {
+                        "x" : 430,
+                        "y" : 302
+                     },
+                     {
+                        "x" : 429,
+                        "y" : 399
+                     }
+                  ]
+               },
+               {
+                  "Front" : [
+                     {
+                        "x" : 439,
+                        "y" : 130
+                     },
+                     {
+                        "x" : 439,
+                        "y" : 60
+                     },
+                     {
+                        "x" : 525,
+                        "y" : 60
+                     },
+                     {
+                        "x" : 538,
+                        "y" : 130
+                     }
+                  ],
+                  "Rear" : [
+                     {
+                        "x" : 435,
+                        "y" : 399
+                     },
+                     {
+                        "x" : 435,
+                        "y" : 302
+                     },
+                     {
+                        "x" : 574,
+                        "y" : 302
+                     },
+                     {
+                        "x" : 592,
+                        "y" : 399
+                     }
+                  ]
+               },
+               {
+                  "Front" : [
+                     {
+                        "x" : 0,
+                        "y" : 0
+                     },
+                     {
+                        "x" : 0,
+                        "y" : 0
+                     },
+                     {
+                        "x" : 0,
+                        "y" : 0
+                     },
+                     {
+                        "x" : 0,
+                        "y" : 0
+                     }
+                  ],
+                  "Rear" : [
+                     {
+                        "x" : 0,
+                        "y" : 0
+                     },
+                     {
+                        "x" : 0,
+                        "y" : 0
+                     },
+                     {
+                        "x" : 0,
+                        "y" : 0
+                     },
+                     {
+                        "x" : 0,
+                        "y" : 0
+                     }
+                  ]
+               }
+            ]
+         },
+         "detectparam" : [
+            {
+               "shutterMax" : 2,
+               "shutterMin" : 3,
+               "uComprehensiveSens" : 20,
+               "uDayNightJudgeMinContiuFrame" : 200,
+               "uDetectSens1" : 20,
+               "uDetectSens2" : 20,
+               "uGraySubThreshold" : 200,
+               "uSobelThreshold" : 3,
+               "uSpeedCounterChangedThreshold" : 20,
+               "uSpeedCounterChangedThreshold1" : 20,
+               "uSpeedCounterChangedThreshold2" : 20,
+               "uStatisticsSens1" : 15,
+               "uStatisticsSens2" : 3,
+               "uTransFactor" : 2
+            },
+            {
+               "shutterMax" : 13,
+               "shutterMin" : 13,
+               "uComprehensiveSens" : 30,
+               "uDayNightJudgeMinContiuFrame" : 200,
+               "uDetectSens1" : 20,
+               "uDetectSens2" : 20,
+               "uGraySubThreshold" : 0,
+               "uSobelThreshold" : 3,
+               "uSpeedCounterChangedThreshold" : 10,
+               "uSpeedCounterChangedThreshold1" : 800,
+               "uSpeedCounterChangedThreshold2" : 150,
+               "uStatisticsSens1" : 15,
+               "uStatisticsSens2" : 3,
+               "uTransFactor" : 2
+            }
+         ],
+         "laneline" : {
+            "laneline" : [
+               {
+                  "endx" : 27,
+                  "endy" : 479,
+                  "startx" : 227,
+                  "starty" : 0
+               },
+               {
+                  "endx" : 218,
+                  "endy" : 479,
+                  "startx" : 311,
+                  "starty" : 0
+               },
+               {
+                  "endx" : 224,
+                  "endy" : 479,
+                  "startx" : 322,
+                  "starty" : 0
+               },
+               {
+                  "endx" : 428,
+                  "endy" : 479,
+                  "startx" : 433,
+                  "starty" : 0
+               },
+               {
+                  "endx" : 435,
+                  "endy" : 479,
+                  "startx" : 435,
+                  "starty" : 0
+               },
+               {
+                  "endx" : 607,
+                  "endy" : 479,
+                  "startx" : 518,
+                  "starty" : 0
+               },
+               {
+                  "endx" : 0,
+                  "endy" : 0,
+                  "startx" : 0,
+                  "starty" : 0
+               },
+               {
+                  "endx" : 0,
+                  "endy" : 0,
+                  "startx" : 0,
+                  "starty" : 0
+               }
+            ],
+            "lanelinenum" : 6
+         },
+         "standpoint" : [
+            {
+               "coordinate" : {
+                  "x" : 0,
+                  "y" : 256
+               },
+               "value" : 30
+            },
+            {
+               "coordinate" : {
+                  "x" : 0,
+                  "y" : 113
+               },
+               "value" : 40
+            },
+            {
+               "coordinate" : {
+                  "x" : 0,
+                  "y" : 23
+               },
+               "value" : 50
+            },
+            {
+               "coordinate" : {
+                  "x" : 0,
+                  "y" : 0
+               },
+               "value" : 0
+            }
+         ],
+         "timep" : [ 330, 420, 1020, 1200 ]
+      }
+   ]
+}

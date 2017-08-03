@@ -3,13 +3,14 @@
 #include <QPushButton>
 #include <QCheckBox>
 #include "yuvrender.h"
-
+#include "data.h"
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
     DataManager&  dm=  DataManager::get_instance();
+    Data &d=Data::get_instance();
  //   ui->mainToolBar->addWidget(new QPushButton ("123123"));
     ui->mainToolBar->addWidget(new QCheckBox("main stream"));
     ui->mainToolBar->addWidget(new QCheckBox("other stream"));

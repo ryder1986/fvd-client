@@ -11,6 +11,16 @@ typedef struct device_struct{
     mDetectDeviceConfig dev_cfg;
 }ds;
 
+
+typedef struct data{
+    int camera_number;
+    mCamParam cam_param[CAM_NUM_MAX];
+    mCamDetectParam det_param[CAM_NUM_MAX];
+    mDetectDeviceConfig dev_cfg;
+}m_data;
+
+
+
 typedef struct road{
      QString road_name;
      QString device_names[16];

@@ -20,7 +20,8 @@ SOURCES += main.cpp\
     yuvrender.cpp \
     dialogaddroad.cpp \
     searchdialog.cpp \
-    client.cpp
+    client.cpp \
+    data.cpp
 
 HEADERS  += mainwindow.h \
     datamanager.h \
@@ -30,7 +31,8 @@ HEADERS  += mainwindow.h \
     yuvrender.h \
     dialogaddroad.h \
     searchdialog.h \
-    client.h
+    client.h \
+    data.h
 
 FORMS    += mainwindow.ui \
     dialogaddroad.ui \

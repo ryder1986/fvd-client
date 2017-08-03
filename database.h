@@ -100,6 +100,7 @@ class Database
 {
 public:
     Database();
+
 //    static void get_mDetectDeviceConfig()
 //    {
 
