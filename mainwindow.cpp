@@ -9,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    qDebug()<<"init mainwindows";
     DataManager&  dm=  DataManager::get_instance();
     Data &d=Data::get_instance();
  //   ui->mainToolBar->addWidget(new QPushButton ("123123"));
@@ -57,12 +58,12 @@ MainWindow::MainWindow(QWidget *parent) :
 
     timer=new QTimer(this);
     connect(timer,SIGNAL(timeout()),this,SLOT(update_yuv()));
-    timer->start(10);
+  //  timer->start(10);
 
 
+    qDebug()<<"init mainwindows 1";
 
-
-
+    d.save_config();
 
 
 

@@ -212,10 +212,25 @@ public:
         static Data dat;
         return dat;
     }
-    void ba_2_d(QByteArray &b,FvdComonData &d){
-        QJsonDocument json_src=QJsonDocument::fromJson(b);
+        void d_2_ba(QByteArray &b,FvdComonData d){
+            //   int camera_total_number= d.dev_cfg.camnum;
+               QJsonDocument json_doc;
+               QJsonObject obj_dev_info;
 
-        QJsonObject obj_dev_info=json_src.object()["dev_info"].toObject();
+               obj_dev_info["detectip"].toString()= d.dev_cfg.detectip;
+               obj_dev_info["detectname"].toString()=d.dev_cfg.detectname;
+//               obj_dev_info["detectport"]= d.dev_cfg.detectport;
+//                obj_dev_info["deviceID"]=d.dev_cfg.deviceID;
+
+
+               json_doc.object()["dev_info"].toObject()=obj_dev_info;
+
+               b=json_doc.toJson();
+        }
+    void ba_2_d(QByteArray &b,FvdComonData &d){
+        QJsonDocument json_doc=QJsonDocument::fromJson(b);
+
+        QJsonObject obj_dev_info=json_doc.object()["dev_info"].toObject();
         //   QString ip=obj_dev_info["detectip"].toString();
         int camera_total_number= d.dev_cfg.camnum=obj_dev_info["camnum"].toInt();
         d.dev_cfg.detectip=obj_dev_info["detectip"].toString();
@@ -223,9 +238,9 @@ public:
         d.dev_cfg.detectport=obj_dev_info["detectport"].toInt();
         d.dev_cfg.deviceID=obj_dev_info["deviceID"].toInt();
 
-        QJsonArray array_cam_param=json_src.object()["cam_param"].toArray();
+        QJsonArray array_cam_param=json_doc.object()["cam_param"].toArray();
      //   for(int i=0;i<road_total_number;i++){
-        QJsonArray array_det_param=json_src.object()["det_param"].toArray();
+        QJsonArray array_det_param=json_doc.object()["det_param"].toArray();
 
             for(int j=0;j<camera_total_number;j++)
             {
@@ -393,13 +408,55 @@ public:
         //      qDebug()<<"reading msg";
         //   qDebug()<<path;
     }
+    void save_config()
+    {
+//        QDir *dir=new QDir(QString("cfg_dir"));
+//        QStringList list=dir->entryList();
+
+//        foreach (QString a, list) {
+//            QString b=a;
+//            if(a.remove(0,a.length()-4)=="json")
+//            {
+//                road_total_number++;
+//                QFile f(QString(dir->absoluteFilePath(b)));
+//                //  QFile f(QString().append(QString("cfg_dir")).append(b));
+//                f.open(QIODevice::ReadOnly);
+//                QByteArray json_data;
+//                FvdComonData data;
+//                json_data=f.readAll();
+//                ba_2_d(json_data,data);
+//                d.append(data);
+
+//            }
+
+//        }
+
+
+
+        foreach (FvdComonData road_data, d) {
+
+              QByteArray ba;
+              d_2_ba(ba,road_data);
+              QString fn(road_data.dev_cfg.detectname);
+              fn.append("writed");
+
+              qDebug()<<"saved in "<<fn;
+              QFile file(fn);
+              file.open(QIODevice::ReadWrite);
+              file.write(ba);
+
+//              QFile file(fn);
+//              file.open(QIODevice::ReadWrite);
+
+        }
+    }
 
 signals:
 
 public slots:
 private:
     explicit Data(QObject *parent = 0);
-
+  int camera_total_number;
     int road_total_number;
 };
 
