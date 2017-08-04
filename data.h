@@ -206,7 +206,7 @@ class Data : public QObject
 {
     Q_OBJECT
 public:
-
+    QList <FvdComonData> d;
     static Data &get_instance()
     {
         static Data dat;
@@ -399,7 +399,7 @@ signals:
 public slots:
 private:
     explicit Data(QObject *parent = 0);
-    QList <FvdComonData> d;
+
     int road_total_number;
 };
 

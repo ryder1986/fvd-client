@@ -35,6 +35,27 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
 
+
+    QStandardItem *p_root=tree_model.invisibleRootItem();
+
+
+    foreach (FvdComonData road_data, d.d) {
+        QStandardItem *p_item=new QStandardItem(QString(road_data.dev_cfg.detectname));
+        p_root->appendRow(p_item);
+
+                for(int i=0;i<  road_data.dev_cfg.camnum;i++)
+                {
+                    QString str( road_data.cam_param[i].camattr.cammerIp);
+                    QStandardItem *p_item1=new QStandardItem( str);
+
+                       p_item->appendRow(p_item1);
+
+                 }
+    }
+    update_devices();
+
+
+
    // ui->horizontalLayout->addWidget(ui->widget);
 
 
