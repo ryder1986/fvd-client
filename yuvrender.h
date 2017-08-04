@@ -7,6 +7,7 @@ class YuvRender : public QGLWidget
 {
     Q_OBJECT
 public:
+
     explicit YuvRender(QWidget *parent = 0);
     void set_buf(char *);
 
@@ -87,7 +88,7 @@ private:
     int video_width;
     int video_height;
     int pressed_x,pressed_y,pressed;
-
+    int tick;
 protected:
     void  initializeGL();
     void  resizeGL(int w, int h);

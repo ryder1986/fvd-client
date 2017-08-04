@@ -55,6 +55,19 @@ MainWindow::MainWindow(QWidget *parent) :
     update_devices();
 
 
+    timer=new QTimer(this);
+    connect(timer,SIGNAL(timeout()),this,SLOT(update_yuv()));
+    timer->start(10);
+
+
+
+
+
+
+
+
+
+
 
    // ui->horizontalLayout->addWidget(ui->widget);
 
@@ -195,4 +208,34 @@ void MainWindow::del_road()
 //  tree_model.removeRow(0,model_index);
 //  tree_model.clear();
   tree_model.removeRow(model_index.row());
+}
+extern QPoint pt[16];
+extern QPoint pt_rear[16];
+void MainWindow::on_treeView_devices_doubleClicked(const QModelIndex &index)
+{
+
+    int road_index=index.parent().row();
+    int cam_index=index.row();
+    if(index.parent().isValid()){
+          qDebug()<<"select road "<<index.parent().row()<<",  camera "<<index.row();
+
+
+  Data &d=Data::get_instance();
+    for (int i = 0; i < 16; i++)
+    {
+       //qDebug("%d %d\n",(d.d[road_index].det_param[cam_index].detectlane.virtuallane[i / 4].Front[i % 4].x, d.d[road_index].det_param[1].detectlane.virtuallane[i / 4].Front[i % 4].y));
+       pt[i].setX(d.d[road_index].det_param[cam_index].detectlane.virtuallane[i / 4].Front[i % 4].x);
+       pt[i].setY(d.d[road_index].det_param[cam_index].detectlane.virtuallane[i / 4].Front[i % 4].y);
+        //        graHandle_trans.DrawEllipse(RedPen, overlay_data.rear[i].X, overlay_data.rear[i].Y, 20, 20);
+     //  qDebug("%d %d\n",d.d[road_index].det_param[cam_index].detectlane.virtuallane[i / 4].Rear[i % 4].x,d.d[1].det_param[1].detectlane.virtuallane[i / 4].Rear[i % 4].y);
+
+       pt_rear[i].setX(d.d[road_index].det_param[cam_index].detectlane.virtuallane[i / 4].Rear[i % 4].x);
+       pt_rear[i].setY(d.d[road_index].det_param[cam_index].detectlane.virtuallane[i / 4].Rear[i % 4].y);
+    }
+  }
+}
+
+void MainWindow::update_yuv()
+{
+     render->update();
 }

@@ -10,6 +10,7 @@
 YuvRender::YuvRender(QWidget *parent) :
     QGLWidget(parent),video_width(VIDEO_WIDTH),video_height(VIDEO_HEIGHT),pressed_x(0),pressed_y(0)
 {
+    tick=0;
 }
 void YuvRender::set_buf(char *buffer)
 {
@@ -26,9 +27,11 @@ void YuvRender::resizeGL(int w, int h)
 
 }
 static int flg=0;
-
+#include <QtCore>
 void YuvRender::paintEvent(QPaintEvent *)
 {
+    qDebug()<<"paint "<<tick++;
+    tick+=10;
     QPainter painter(this);
     painter.beginNativePainting();
     makeCurrent();
@@ -49,7 +52,7 @@ void YuvRender::paintEvent(QPaintEvent *)
 //  if(flg++>10)
 
 
-    painter.drawEllipse(pressed_x,pressed_y,100,100);
+    painter.drawEllipse(pressed_x+tick%300,pressed_y,100,100);
     QPen testpen(red_brush_trans,10);
    painter.setPen(testpen);
 

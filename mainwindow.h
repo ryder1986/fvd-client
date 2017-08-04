@@ -30,6 +30,8 @@ private slots:
     }
     void add_new_device();
     void del_road();
+    void on_treeView_devices_doubleClicked(const QModelIndex &index);
+    void update_yuv();
 private:
     YuvRender *render;
     Ui::MainWindow *ui;
@@ -37,6 +39,7 @@ private:
    DialogAddRoad add_road_dialog;
       QModelIndex model_index;
       SearchDialog search_dialog;
+      QTimer *timer;
 
 };
 
